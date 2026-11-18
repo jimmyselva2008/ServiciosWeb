@@ -40,27 +40,13 @@ public class UsuarioController {
 
         tblUsuarios.setEditable(false);
 
-        colId.setCellValueFactory(
-                new PropertyValueFactory<>("Id")
-        );
-        colNombre.setCellValueFactory(
-                new PropertyValueFactory<>("Nombre")
-        );
-        colUsername.setCellValueFactory(
-                new PropertyValueFactory<>("Username")
-        );
-        colEmail.setCellValueFactory(
-                new PropertyValueFactory<>("Email")
-        );
-        colTelefono.setCellValueFactory(
-                new PropertyValueFactory<>("Telefono")
-        );
-        colCiudad.setCellValueFactory(
-                new PropertyValueFactory<>("Ciudad")
-        );
-        colEmpresa.setCellValueFactory(
-                new PropertyValueFactory<>("Empresa")
-        );
+        colId.setCellValueFactory(new PropertyValueFactory<>("id"));
+        colNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+        colUsername.setCellValueFactory(new PropertyValueFactory<>("username"));
+        colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+        colTelefono.setCellValueFactory(new PropertyValueFactory<>("telefono"));
+        colCiudad.setCellValueFactory(new PropertyValueFactory<>("ciudad"));
+        colEmpresa.setCellValueFactory(new PropertyValueFactory<>("empresa"));
 
         lblEstado.setText("Presiona el boton Consultar");
     }

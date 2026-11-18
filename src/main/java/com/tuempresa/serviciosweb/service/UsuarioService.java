@@ -29,8 +29,8 @@ public class UsuarioService {
                 request, HttpResponse.BodyHandlers.ofString()
         );
 
-        if (response.statusCode() == 200) {
-            throw new IOException("Error al obtener el usuario");
+        if (response.statusCode() != 200) {
+            throw new IOException("Error al consultar usuarios. HTTP " + response.statusCode());
         }
 
         ObjectMapper mapper = new ObjectMapper();
